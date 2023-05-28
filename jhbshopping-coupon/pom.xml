@@ -8,16 +8,22 @@
         <version>2.1.8.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.jhb.shopping</groupId>
+    <groupId>com.jhb.jhbshopping</groupId>
     <artifactId>jhbshopping-coupon</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>jhbshopping-coupon</name>
     <description>jhbshopping-coupon</description>
     <properties>
         <java.version>1.8</java.version>
-        <spring-cloud.version>2021.0.7</spring-cloud.version>
+        <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>com.jhb.shopping</groupId>
+            <artifactId>jhbshopping-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
