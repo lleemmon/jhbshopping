@@ -8,11 +8,12 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 /**
  * 商品三级分类
- * 
+ *
  * @author jianghuibin
  * @email 574438083@qq.com
  * @date 2023-05-27 11:14:56
@@ -61,6 +62,7 @@ public class CategoryEntity implements Serializable {
 	 */
 	private Integer productCount;
 
+	@JsonInclude(JsonInclude.Include.NON_EMPTY)
 	@TableField(exist = false)
 	private List<CategoryEntity> children;
 

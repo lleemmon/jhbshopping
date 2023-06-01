@@ -1,0 +1,25 @@
+spring:
+#  datasource:
+#    username: root
+#    password: 123456
+#    url: jdbc:mysql://localhost:3306/gulimall_pms?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    alicloud:
+      access-key: LTAI5t5pVeuNcf4Qd31jd8tQ
+      secret-key: IFACctXvDVkMNPgBIAo17ub4eFSeoy
+      oss:
+        endpoint: oss-cn-hangzhou.aliyuncs.com
+        bucket: jhbshopping-oss
+  application:
+    name: jhbshopping-third-party
+
+server:
+  port: 8106
+
+
+
+

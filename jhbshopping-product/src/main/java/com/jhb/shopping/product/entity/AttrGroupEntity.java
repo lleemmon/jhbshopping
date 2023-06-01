@@ -1,15 +1,17 @@
 package com.jhb.shopping.product.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 
 import java.io.Serializable;
+import java.util.List;
 
 import lombok.Data;
 
 /**
  * 属性分组
- * 
+ *
  * @author jianghuibin
  * @email 574438083@qq.com
  * @date 2023-05-27 11:14:56
@@ -44,5 +46,8 @@ public class AttrGroupEntity implements Serializable {
 	 * 所属分类id
 	 */
 	private Long catelogId;
+
+	@TableField(exist = false)
+	private List<Long> catelogPath;
 
 }

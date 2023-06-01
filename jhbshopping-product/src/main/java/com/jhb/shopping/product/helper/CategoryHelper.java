@@ -19,6 +19,9 @@ public class CategoryHelper {
                 })
                 .sorted((item1, item2) -> (item1.getSort() != null ? item1.getSort() : 0) - (item2.getSort() != null ? item2.getSort() : 0))
                 .collect(Collectors.toList());
+//        if(categoryEntities.size() == 0){
+//            return null;
+//        }
         return categoryEntities;
     }
 }

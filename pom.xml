@@ -21,6 +21,7 @@
         <module>jhbshopping-order</module>
         <module>jhbshopping-product</module>
         <module>jhbshopping-ware</module>
+        <module>jhbshopping-third-party</module>
         <module>renren-fast</module>
         <module>renren-generator</module>
         <module>jhbshopping-common</module>
